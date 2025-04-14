@@ -31,8 +31,8 @@ const projects = [
       "Tailwind CSS",
       "Framer Motion",
     ],
-    github: "https://github.com/yourusername/task-manager",
-    demo: "https://task-manager-demo.com",
+    github: "https://github.com/prakhar2010030/portfolio_latest",
+    demo: "https://portfolio-shunnya.netlify.app/",
   },
   {
     title: "Cashflow",

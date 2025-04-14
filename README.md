@@ -113,11 +113,6 @@ portfolio/
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 🤝 Contributing
 
@@ -128,9 +123,8 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## 👤 Author
 
 prakhar
-- Website: [your-website.com](https://your-website.com)
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+- Website: [prakhar_portfolio.com](https://portfolio-shunnya.netlify.app/)
+- GitHub: [@prakhar2010030](https://github.com/prakhar2010030)
 
 ---
 
