@@ -1,27 +1,6 @@
 import { motion } from "framer-motion";
 import { FaBriefcase } from "react-icons/fa";
-
-const experiences = [
-  {
-    title: "MERN Developer Intern",
-    company: "Susalabs Pvt. Ltd.",
-    duration: "Dec 2023 - August 2024",
-    description: [
-      "Developed and integrated 20+ RESTful APIs for an Employee Management System, successfully merging 3 databases into a unified backend, reducing data redundancy by 40%.",
-      "Improved application performance by implementing code splitting, which decreased bundle size by 35% and boosted initial load speed.",
-      "Contributed to the development of scalable back-end systems for a ticketing and e-commerce application.",
-    ],
-  },
-  {
-    title: "MERN Developer Intern",
-    company: "AGBIZ TECHNOLOGIES.",
-    duration: "May 2023 - July 2023",
-    description: [
-      "Contributed to the development of S-TAP, a tour and travel web application, by designing and integrating keyfront-end components and back-end APIs.",
-      "Developed 10+ reusable UI components using React and Tailwind CSS, improving development speed and code maintainability across the project.",
-    ],
-  },
-];
+import { experiences } from "../assets/constants";
 
 const Experience = () => {
   return (

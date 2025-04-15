@@ -1,63 +1,5 @@
-import { motion } from 'framer-motion';
-import {
-  FaReact,
-  FaNodeJs,
-  FaDocker,
-  FaGitAlt,
-} from 'react-icons/fa';
-import {
-  SiTypescript,
-  SiMongodb,
-  SiPostgresql,
-  SiTailwindcss,
-  SiRedux,
-  SiExpress,
-  SiNextdotjs,
-  SiMysql,
-  SiSocketdotio,
-  SiHono,
-  SiPrisma,
-  SiTurborepo,
-} from 'react-icons/si';
-
-const skillCategories = [
-  {
-    title: 'Frontend',
-    skills: [
-      { name: 'React', icon: FaReact, level: 90 },
-      { name: 'Next.js', icon: SiNextdotjs, level: 90 },
-      { name: 'TypeScript', icon: SiTypescript, level: 85 },
-      { name: 'Redux Toolkit', icon: SiRedux, level: 80 },
-      { name: 'Tailwind CSS', icon: SiTailwindcss, level: 85 },
-    ],
-  },
-  {
-    title: 'Backend',
-    skills: [
-      { name: 'Node.js', icon: FaNodeJs, level: 85 },
-      { name: 'Hono', icon: SiHono, level: 85 },
-      { name: 'Express', icon: SiExpress, level: 80 },
-      { name: 'Web Socket', icon: SiSocketdotio, level: 75 },
-      { name: 'Prisma ORM', icon: SiPrisma, level: 75 },
-    ],
-  },
-  {
-    title: 'Database',
-    skills: [
-      { name: 'MongoDB', icon: SiMongodb, level: 80 },
-      { name: 'PostgreSQL', icon: SiPostgresql, level: 75 },
-      { name: 'MySQL', icon: SiMysql, level: 70 },
-    ],
-  },
-  {
-    title: 'DevOps & Tools',
-    skills: [
-      { name: 'Docker', icon: FaDocker, level: 70 },
-      { name: 'Turborepo', icon: SiTurborepo, level: 65 },
-      { name: 'Git', icon: FaGitAlt, level: 85 },
-    ],
-  },
-];
+import { motion } from "framer-motion";
+import { skillCategories } from "../assets/constants";
 
 const Skills = () => {
   return (
@@ -91,7 +33,7 @@ const Skills = () => {
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 {category.title}
               </h3>
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
                     key={skill.name}
@@ -100,18 +42,11 @@ const Skills = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: skillIndex * 0.1 }}
                   >
-                    <div className="flex items-center mb-2">
-                      <skill.icon className="w-6 h-6 text-indigo-600 dark:text-indigo-400 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-300">{skill.name}</span>
-                    </div>
-                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                      <motion.div
-                        className="bg-indigo-600 dark:bg-indigo-400 h-2.5 rounded-full"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: skillIndex * 0.1 }}
-                      />
+                    <div className="flex items-center px-4 py-2 rounded-full bg-indigo-100 dark:bg-indigo-900">
+                      <skill.icon className="w-5 h-5 text-indigo-600 dark:text-indigo-400 mr-2" />
+                      <span className="text-indigo-700 dark:text-indigo-300 text-sm font-medium">
+                        {skill.name}
+                      </span>
                     </div>
                   </motion.div>
                 ))}
@@ -124,4 +59,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;

@@ -1,64 +1,7 @@
 import { motion } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import exam from "../assets/portal.png";
-import portfolio from "../assets/portfolio.png";
-import seo from "../assets/seo.png";
-import cashflow from "../assets/cashflow.png";
 
-const projects = [
-  {
-    title: "Exam Platform",
-    description:
-      "A full-featured online exam portal that allows students to take timed quizzes and view results in real-time. Includes admin tools for creating, managing, and evaluating exams securely..",
-    image: exam,
-    technologies: [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Express",
-      "Context API",
-    ],
-    demo: "https://test-portal-shunnya.netlify.app/",
-  },
-  {
-    title: "Portfolio",
-    description: "A portfolio website that showcases my projects and skills.",
-    image: portfolio,
-    technologies: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-    ],
-    github: "https://github.com/prakhar2010030/portfolio_latest",
-    demo: "https://portfolio-shunnya.netlify.app/",
-  },
-  {
-    title: "Cashflow",
-    description:
-      "A cashflow management app with seamless QR-based transaction scanning. Enables users to instantly log and categorize expenses by scanning payment receipts or QR codes.",
-    image: cashflow,
-    technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB","lazy loading"],
-    github: "https://github.com/prakhar2010030/cashflow",
-    demo: "https://cashflow-shunnya.netlify.app/",
-  },
-  {
-    title: "SEO Landing Page",
-    description:
-      "A landing page for a SEO company with a clean and modern design.",
-    image: seo,
-    technologies: [
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
-      "React",
-      "TypeScript",
-    ],
-    github: "https://github.com/prakhar2010030/landing-page",
-    demo: "https://ai-seo-page.netlify.app/",
-  },
-];
+import { projects } from "../assets/constants";
 
 const Projects = () => {
   return (
